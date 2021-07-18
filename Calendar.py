@@ -8,7 +8,7 @@ print("				    Basic Terminal Calendar")
 def Show_Calendars():
 	while(True):
 		print("""
-					Choose the View:
+				Choose the View:
 
 			To view by year type in: by year
 			To view by month type in: by month

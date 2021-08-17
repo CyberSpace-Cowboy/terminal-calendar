@@ -2,17 +2,18 @@
 import calendar
 from datetime import date
 
+import shutil
+columns = shutil.get_terminal_size().columns
 
-print("				    Basic Terminal Calendar")
+
+print("\n" + "BASIC TERMINAL CALENDAR".center(columns) + "\n")
 
 def Show_Calendars():
 	while(True):
-		print("""
-				Choose the View:
+		print("Choose the View:\n".center(columns))
+		print("To view by year type in: by year\n".center(columns))
+		print("To view by month type in: by month\n".center(columns))
 
-			To view by year type in: by year
-			To view by month type in: by month
-		""")
 		view = input(" Type in the view: ").lower()
 
 		if view == "by year":
